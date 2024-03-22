@@ -17,10 +17,6 @@ fun Routing.index() {
 //                        src = "https://unpkg.com/htmx.org@1.9.10"
                     src = "static/assets/htmx.min.js"
                 }
-//                    link {
-//                        href = "static/assets/styles.css"
-//                        rel = "stylesheet"
-//                    }
                 script {
 //                        src = "https://cdn.tailwindcss.com"
                     src = "static/assets/tailwind.js"

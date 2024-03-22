@@ -13,11 +13,16 @@ fun main() {
 }
 
 fun Application.module() {
+    // Create a websocket for the chat example
     configureSockets()
-    configureTemplating()
+    // Content will be returned as json, by detail, from routes
     configureSerialization()
+    // Configure simple call logging
     configureMonitoring()
+    // Configure CORS and compression
     configureHTTP()
+    // Sample OAuth and JWT security
     configureSecurity()
+    // Configure routes
     configureRouting()
 }
