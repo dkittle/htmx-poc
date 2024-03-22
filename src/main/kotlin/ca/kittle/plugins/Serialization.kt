@@ -1,3 +1,5 @@
+@file:Suppress("ktlint:standard:no-wildcard-imports")
+
 package ca.kittle.plugins
 
 import io.ktor.serialization.kotlinx.json.*
