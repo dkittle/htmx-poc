@@ -3,6 +3,7 @@
 package ca.kittle.plugins
 
 import ca.kittle.routing.*
+import ca.kittle.routing.users.listUsers
 import io.ktor.server.application.*
 import io.ktor.server.routing.*
 
@@ -14,5 +15,7 @@ fun Application.configureRouting() {
         animation()
         loading()
         chat()
+        // Users
+        listUsers()
     }
 }

@@ -1,3 +1,5 @@
+@file:Suppress("ktlint:standard:filename")
+
 package ca.kittle.routing
 
 import ca.kittle.components.emptyTabPage

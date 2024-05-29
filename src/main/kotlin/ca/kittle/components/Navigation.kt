@@ -41,6 +41,7 @@ fun FlowContent.navigation() {
                                         // Fetch from the URL and update the content div
                                         attributes["hx-get"] = it.url
                                         attributes["hx-target"] = "#content"
+                                        attributes["hx-push-url"] = "true"
 
                                         classes =
                                             setOf(

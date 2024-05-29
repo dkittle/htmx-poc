@@ -5,7 +5,7 @@ package ca.kittle.plugins
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
 import io.ktor.client.*
-import io.ktor.client.engine.apache.*
+import io.ktor.client.engine.cio.*
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.auth.*
@@ -55,7 +55,7 @@ fun Application.configureSecurity() {
                     defaultScopes = listOf("https://www.googleapis.com/auth/userinfo.profile"),
                 )
             }
-            client = HttpClient(Apache)
+            client = HttpClient(CIO)
         }
     }
     routing {

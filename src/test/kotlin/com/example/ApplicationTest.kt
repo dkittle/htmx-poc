@@ -1,7 +1,8 @@
+@file:Suppress("ktlint:standard:no-wildcard-imports")
+
 package com.example
 
 import ca.kittle.plugins.configureRouting
-import com.example.plugins.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
